@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=PT+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Inter:wght@500&family=PT+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@300&family=Inter:wght@500&family=PT+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gelasio:ital@1&family=Geologica:wght@300&family=Inter:wght@500&family=Josefin+Sans:ital,wght@1,700&family=Oswald:wght@600&family=PT+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@300&family=Inter:wght@500&family=PT+Sans&family=Roboto&family=Ysabeau:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@800&family=Inter:wght@500&family=PT+Sans&family=Roboto&family=Ysabeau:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /*corpo do site*/
+    background-color: rgb(240, 228, 228);
+}
+
+.container {
+    /*class container*/
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#cabecalho .container #menu {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Geologica', sans-serif;
+}
+
+#cabecalho {
+    background-color: rgb(228, 13, 13);
+    /* margin-bottom: 30px;*/
+
+
+}
+
+#cabecalho .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#cabecalho .container #logo {
+    width: 130px;
+    margin-right: 250px;
+}
+
+/*inicio do style menu*/
+#cabecalho #menu ul {
+    display: flex;
+}
+
+
+
+
+#cabecalho #menu li ul {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    font-size: 17.5px;
+    text-decoration: none;
+}
+
+#cabecalho #menu li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .3s linear;
+}
+
+#cabecalho #menu a:hover {
+    background-color: black;
+}
+
+#cabecalho #menu li {
+    list-style: none;
+
+
+}
+
+#menu>ul {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+#menu ul ul {
+    display: none;
+    margin: 0px;
+}
+
+
+
+
+#back .fundo {
+
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    opacity: 98%;
+    background-image: url(../imagens/background/senna2.png);
+    background-size: cover;
+
+}
+
+#back .fundo .titulo {
+    color: #f3f3f3;
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    font-weight: 600;
+    font-size: italic;
+    margin-bottom: 50%;
+    padding-top: 20%;
+    font-size: 90px;
+    padding-left: 14%;
+
+}
+
+
+
+/*-----------------------------------------inicio da pagina  historia-------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+#historia .container .subtitulo {
+    display: flex;
+    justify-content: center;
+    padding-left: 18%;
+    padding-bottom: 8%;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+
+
+#historia .container #conteudo {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+
+#historia .container #conteudo .img {
+    display: block;
+    padding-left: 60%;
+    padding-bottom: 20%;
+    padding-right: 90%;
+    margin-top: -10%;
+}
+
+
+
+#historia .container #texto {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 17%;
+    gap: 10%;
+}
+
+#historia .container #cont {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    padding-bottom: 20%;
+    font-weight: 600;
+    padding-top: 6%;
+    padding-right: -20%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#historia .container #cont img {
+    width: 600px;
+}
+
+/*--------------------------------------------------*/
+
+
+
+
+
+#guia h3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 12%;
+    padding-bottom: 5%;
+    padding-top: 15%;
+    font-size: 26px;
+
+}
+
+#guia #tabela img {
+    width: 300px;
+    padding-bottom: 11%;
+}
+
+#guia #tabela {
+    padding-top: 2%;
+
+}
+
+#guia #tabela li {
+    list-style: none;
+    padding-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+
+}
+
+#guia h4 {
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+/*--------------------------------*/
+
+#guia .pneu .paragrafo {
+    list-style: none;
+    padding-bottom: 10%;
+
+
+}
+
+#guia .pneu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+
+}
+
+#guia .pneu img {
+    width: 200px;
+}
+
+/*-------------------------------------*/
+#guia .topico {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#guia .container li {
+
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#guia .container h4 {
+    padding-top: 5%;
+    font-size: 17px;
+    padding-left: 13%;
+}
+
+#guia .container p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#guia .subtitulo {
+    padding-top: 7%;
+}
+
+#guia .termos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 10%;
+}
+
+#guia .termos img {
+    width: 450px;
+}
+
+
+/*-----------------------------------------------------------------------INICIO DO STYLE EM VIDEOS----------------------------------------------------------------------------------*/
+
+
+#cor {
+    background-color: rgb(197, 182, 182);
+    padding-top: 20%;
+    margin-bottom: 30px;
+}
+
+#corpo #videos img {
+    width: 560px;
+    height: 315px;
+}
+
+#corpo .container #videos {
+    margin-top: 10%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin-bottom: 15%;
+}
+
+#corpo .container #videos p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*-----------------------------INICIO DO STYLE Circuito---------------------------*/
+
+#corpo .container #circuitos ul {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 8%;
+
+}
+
+#corpo .container #circuitos img {
+    width: 300px;
+    max-width: 1200px;
+}
+
+/*-------------------------------INICIO DO STYLE EM Jogos---------------*/
+
+
+#inicio .container .mobile {
+    margin-left: -30%;
+    max-width: 1200px;
+    list-style: none;
+    margin-top: -4px;
+}
+
+#inicio .container .mobileredbull {
+    margin-left: -30%;
+    max-width: 1200px;
+    list-style: none;
+    margin-top: -4px;
+}
+
+#inicio .container .mobilemercedes {
+    margin-left: -30%;
+    max-width: 1200px;
+    list-style: none;
+    margin-top: -4px;
+}
+
+#inicio .container .mobilealpha {
+    margin-left: -30%;
+    max-width: 1200px;
+    list-style: none;
+    margin-top: -4px;
+}
+
+
+#corpo #jogo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    position: absolute;
+    padding-left: 40%;
+    padding-top: 10%;
+    padding-left: 30%;
+}
+
+#corpo #jogo h2 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 65px;
+    position: absolute;
+    padding-left: 40%;
+    padding-top: 13%;
+    padding-left: 30%;
+}
+
+
+#corpo #jogo h3 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    margin-left: -10%;
+    padding-top: 19%;
+    padding-left: 25%;
+}
+
+#inicio .container .titulo {
+    color: #f3f3f3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    margin-left: -40%;
+    padding-top: 10%;
+    padding-left: 30%;
+
+}
+
+
+#inicio .container .tit {
+    color: #f3f3f3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    margin-left: -40%;
+    padding-top: 11.5%;
+    padding-left: 30%;
+
+}
+
+#inicio .container p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: -40%;
+    padding-top: 14%;
+    padding-left: 30%;
+
+}
+
+#inicio .container .p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: -40%;
+    padding-top: 15%;
+    padding-left: 30%;
+
+}
+
+#inicio .container .textoum {
+    color: #f3f3f3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 17%;
+    padding-top: 11%;
+    padding-left: 30%;
+}
+
+
+#inicio .container .textodois {
+    color: #f3f3f3;
+    font-family: 'Geologica', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 17%;
+    padding-top: 13%;
+    padding-left: 30%;
+}
+
+
+#inicio .container .texto {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: 15%;
+    padding-top: 16%;
+    padding-left: 30%;
+
+}
+
+
+#inicio .container .subtexto {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: 15%;
+    padding-top: 17%;
+    padding-left: 30%;
+
+}
+
+#inicio .container .subtext {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: 15%;
+    padding-top: 18%;
+    padding-left: 30%;
+
+}
+
+
+#fim .container h1 {
+    margin-top: 10%;
+}
+
+
+#fim .container .but-jogos {
+    background-color: rgb(248, 13, 13);
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+    transition: all .5s linear;
+
+}
+
+#fim .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+#fim .container .but-jogos:hover {
+    background-color: rgb(255, 255, 255);
+    color: #030303;
+    box-shadow: 01px 1px 01px 02px rgb(255, 0, 0);
+
+}
+
+/*-------------------- style em Pilotos-----------------------*/
+#corpo h1 {
+    text-align: center;
+    padding-top: 10%;
+
+
+}
+
+#corpo #campeoes {
+    padding-left: 19%;
+    padding-top: 8%;
+}
+
+#corpo #campeoes img {
+    width: 75%;
+}
+
+#corpo #maiorescampeoes img {
+    width: 180px;
+}
+
+#maiorescampeoes {
+    padding-top: 10%;
+    padding-left: 20%;
+    display: flex;
+    gap: 8%;
+
+}
+
+#campeoesbrasileiros {
+    padding-top: 10%;
+    padding-left: 20%;
+    display: flex;
+    gap: 8%;
+    padding-bottom: 5%;
+
+}
+
+#ferrari img {
+    width: 100%;
+}
+
+#ferrari h1 {
+    position: absolute;
+    color: #f3f3f3;
+    padding-left: 47%;
+    padding-top: 30%;
+    font-size: 40px;
+}
+
+.historiaequipes {
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+
+#mclaren img {
+    width: 100%;
+}
+
+#mercedes img {
+    width: 100%;
+}
+
+
+
+
+
+#rodape {
+    background-color: #363636;
+    padding: 20px;
+    color: #fff2f2;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 3%;
+}
